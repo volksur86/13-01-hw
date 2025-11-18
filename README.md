@@ -18,6 +18,31 @@
 Какие уязвимости были вами обнаружены? (список со ссылками: достаточно трёх уязвимостей)
 Приведите ответ в свободной форме.
 
+Решение 2
+
+Скачал и установил виртуальную машину Metasploitable, так же развернул еще одну машину с Kali Linux, с которой будем проводить тестирование.
+
+<img width="1700" height="1097" alt="image" src="https://github.com/user-attachments/assets/2f2c86ba-a04a-4622-b2a0-aba001439d79" />
+
+используя nmap -sV сканируем машину Metasploitable, в выводе видим список какие службы в ней разрешены. Далее, в полученном списке ищем уязвимости используя базу уязвимостей на https://www.exploit-db.com  
+
+Список служб, которые нашли и попробуем найти уязвимости:
+
+<img width="426" height="495" alt="image" src="https://github.com/user-attachments/assets/8b4fb0fb-b60e-4323-9c55-cb84a1b24198" />
+
+Примеры уязвимостей из полученного списка:
+
+vsftpd 2.3.4  https://www.exploit-db.com/exploits/49757
+
+MySQL 5.0.51a-3ubuntu5   https://www.exploit-db.com/exploits/30020
+
+PostgreSQL DB 8.3.0 - 8.3.7   https://www.exploit-db.com/exploits/32849
+
+Apache httpd 2.2.8 ((Ubuntu) DAV/2)   
+
+
+
+
 Задание 2
 Проведите сканирование Metasploitable в режимах SYN, FIN, Xmas, UDP.
 
