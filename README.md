@@ -38,12 +38,11 @@ MySQL 5.0.51a-3ubuntu5   https://www.exploit-db.com/exploits/30020
 
 PostgreSQL DB 8.3.0 - 8.3.7   https://www.exploit-db.com/exploits/32849
 
-Apache httpd 2.2.8 ((Ubuntu) DAV/2)   
-
-
+UnrealIRCd   https://www.exploit-db.com/exploits/13853   
 
 
 Задание 2
+
 Проведите сканирование Metasploitable в режимах SYN, FIN, Xmas, UDP.
 
 Запишите сеансы сканирования в Wireshark.
